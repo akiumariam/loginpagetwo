@@ -1,0 +1,101 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #1f1f1f; /* Dim dark */
+      color: #e0e0e0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background-color: #2a2a2a; /* Dark card */
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      width: 350px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .login-container p {
+      color: #bdbdbd;
+      margin-bottom: 25px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      background-color: #3a3a3a;
+      color: #e0e0e0;
+      border: 1px solid #555;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .login-container input::placeholder {
+      color: #999;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #4abdb4;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #379c93;
+    }
+
+    .login-container a {
+      display: block;
+      margin-top: 15px;
+      color: #90caf9;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .login-container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
